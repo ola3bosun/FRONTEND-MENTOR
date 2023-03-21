@@ -43,8 +43,19 @@ img{
 }
 @media screen and (max-width: 500px){
     .parent {
-        width: 80%;
+        width: 90%;
         margin: 8% auto ;
-
+        padding: 0;
+    }
+    .qr-container{
+        width: 90%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .qr-container img{
+        width: 280px;
+        height: 280px;
+        margin: 0;
+        padding: ;
     }
 }
