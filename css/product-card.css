@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: hsl(30, 38%, 92%);
+    }
+    /* TEXT AND IMAGE CONTAINER (ACTUAL CARD) */
+    .card-body{
+        display: flex;
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 50%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* IMAGES */
+    .top-image-mobile{
+        display: none;
+    }
+    .left-image{
+        height: 470px;
+    }
+    .left-image img{
+        height: 470px;
+    }
+    /* CARD TEXT */
+    .right-text{
+        background-color: hsl(0, 0%, 100%);
+        margin: 0 auto 0 auto;
+        padding: 2rem 3rem 2rem 2rem;
+    }
+    .perfume{
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+        letter-spacing: .5rem;
+        padding-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    h1{
+        color: hsl(212, 21%, 14%);
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        word-spacing: .5rem;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .product-description{
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+        line-height: 1.2rem;
+        padding-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .present-price{
+        font-family: 'Fraunces', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: hsl(158, 36%, 37%);
+    }
+    .old-price{
+        font-family: 'Montserrat' sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        padding-left: 1rem;
+        text-decoration: line-through 1px hsl(228, 12%, 48%);
+    }
+    button{
+        margin-top: 2rem;
+        padding: 16px 64px;
+        border-radius: 8px;
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        border: solid 1px hsl(158, 36%, 37%);
+        font-family: 'Montserrat', sans-serif;
+        color: #f5f5f5;
+    }
+    .button-text{
+        font-size: 14px;
+        font-weight: 500;
+        color: #f5f5f5;
+        padding-left: .5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* MOBILE PHONE VIEW */
+    @media screen and (max-width:400px){
+        .card-body{
+            width: 90%;
+            flex-direction: column;
+            gap: 0;
+        }
+        .left-image{
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+        .product-description{
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 2rem;
+            word-spacing: normal;
+        }
+        .top-image-mobile{
+            display: block;
+            height: 300px;
+        }
+        .top-image-mobile img{
+            height: 300px;
+            margin: 0;
+        }
+        .right-text{
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
