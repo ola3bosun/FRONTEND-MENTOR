@@ -1,0 +1,111 @@
+   /* UNIVERSAL */
+   *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 150% ;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* CARD FORM AND APPEARANCE */
+.card-body{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 2% auto 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.top-image{
+    height: 220px;
+    margin-bottom: 0;
+}
+.top-image img{
+    height: 220px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* CARD TEXT */
+.card-text{
+    background-color: #ffff;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+}
+h2{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 1rem;
+}
+.below{
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 1.5rem;
+}
+.premium-plan{
+    padding: 1rem;
+    display: flex;
+    border-radius:.5rem;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 2rem;
+    box-shadow: inset;
+}
+.music-symbol img{
+    height: 100%;
+}
+.premium-plan-text{
+    padding-left: 1rem;
+    text-align: left;
+    padding-top: .5rem;
+}
+premium-plan-text h5{
+    color: hsl(223, 47%, 23%);
+    font-size: 3rem;
+}
+.price{
+    /* margin-left: -1rem; */
+    color: hsl(224, 23%, 55%);
+    padding-top: 3rem;
+}
+.change{
+    font-weight: 700;
+    padding: 4% 0 1% 6.5rem;
+    float: right;
+}
+/* BOTTOM BUTTONS */
+.top{
+    background-color:  hsl(245, 75%, 52%);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    width: 100%;
+    border: solid 1px  hsl(245, 75%, 52%);
+    border-radius: .5rem;
+    color: #ffff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 8px rgba(0,0,0,0.2);
+}
+.down{
+    background-color: #ffff;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:450px){
+    .card-body{
+        width: 90%;
+    }
+    .change{
+        padding-left: 2rem;
+    }
+    .card-text{
+        padding: 1rem;
+    }
+}
