@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: 15px;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.card-container{
+    margin: 5% auto 0 auto;
+    display: flex;
+    width: 70%;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+/* EACH CAR COLUMN */
+.column{
+    padding: 2rem 2rem 2rem 2.5rem;
+}
+.car-type h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+    font-size: 3rem;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.car-type-pluses p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 3.5rem;
+}
+/* BUTTONS */
+/* FOR SEDANS */
+.sedan{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 12px 1rem;
+    color:hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+/* FOR SUVs */
+.suv{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 12px 1rem;
+    color:hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+/* FOR LUXURY */
+.lux{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 12px 1rem;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    border: solid 1px hsla(0, 0%, 100%, 0.75);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+button{
+    transition: .5s;
+}
+button:hover{
+    cursor: pointer;
+    opacity: .85;
+}
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width:450px){
+    .card-container{
+        width: 90%;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 5%;
+    }
+}
