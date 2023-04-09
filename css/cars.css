@@ -47,6 +47,7 @@ body{
     border: solid 1px hsla(0, 0%, 100%, 0.75);
 }
 .sedans{
+    width: 33.3%;
     background-color: hsl(31, 77%, 52%);
 }
 /* FOR SUVs */
@@ -60,6 +61,7 @@ body{
     border: solid 1px hsla(0, 0%, 100%, 0.75);
 }
 .suvs{
+    width: 33.3%;
     background-color: hsl(184, 100%, 22%);
 }
 /* FOR LUXURY */
@@ -73,6 +75,7 @@ body{
     border: solid 1px hsla(0, 0%, 100%, 0.75);
 }
 .luxury{
+    width: 33.3%;
     background-color: hsl(179, 100%, 13%);
 }
 button{
