@@ -128,3 +128,9 @@ button{
 button:hover{
     background-color: #000000;
 }
+
+@media screen and (max-width:768px){
+    .card-body{
+        flex-direction: column;
+    }
+}
