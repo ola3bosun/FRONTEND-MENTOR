@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 11px;
+    background-color: hsl(221, 100%, 96%);
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Hanken Grotesk',sans-serif;
+    background-color: hsl(0,0%, 100%);
+    border-radius: 16px;
+    /* box-shadow: 10px 10px 2px black; */
+}
+
+/* CARD LHS */
+.grade{
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+}
+.grade h2{
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 2rem;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 3.5rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background-image: linear-gradient( hsla(241, 72%, 46%, 1),hsla(256, 72%, 46%, 1));
+}
+.circle h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.circle span{
+    color: hsl(241, 100%, 89%);
+}
+.g{
+    color: hsl(0,0%,100%);
+    padding-bottom: 1rem;
+}
+.comparison{
+    color: hsl(221, 100%, 96%);
+    font-size: 14px;
+}
+
+/* CARD RHS */
+.breakdown{
+    padding: 2rem;
+}
+.breakdown h2{
+    color: hsl(224, 30%, 27%);
+    padding-bottom: 2rem;
+    font-weight: 800;
+}
+.stat-parameter{
+    display: flex;
+    justify-content:space-between;
+    gap: 70px;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-top-style: solid;
+    border-bottom: 2px hsl(221, 100%, 96%);
+}
+.l{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.parameter{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.lr {
+    color: hsla(0, 100%, 67%,.9);
+}
+.ly{
+    color:hsla(39, 100%, 56%, .9);
+}
+.lg{
+    color: hsla(166, 100%, 37%,.9);
+}
+.lb{
+    color: hsla(234, 85%, 45%,.9);
+}
+.r{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.r span{
+    color: hsl(241, 100%, 89%);
+}
+.first{
+    background-color: hsla(0, 100%, 67%,.1);
+}
+.second{
+    background-color:  hsla(39, 100%, 56%,.1);
+}
+.third{
+    background-color:  hsla(166, 100%, 37%,.1);
+}
+.fourth{
+    background-color: hsla(234, 85%, 45%,.1);
+}
+
+/* BUTTON */
+button{
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: #000000;
+}
