@@ -8,7 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 11px;
     background-color: hsl(221, 100%, 96%);
 }
@@ -134,6 +134,6 @@ button:hover{
         flex-direction: column;
     }
     body{
-        height:200vh;
+        /* height:200vh; */
     }
 }
