@@ -55,7 +55,7 @@ body{
     padding-bottom: 2rem;
 }
 hr{
-    border-top:1px solid hsl(0, 0%, 59%);
+    border-top:1px solid hsla(0, 0%, 59%,.1);
 }
 .stats{
     display: flex;
