@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+}
+.card-body{
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 16px;
+    width: 27%;
+    overflow: hidden;
+}
+.portrait{
+    margin: 0 auto;
+    /* margin-top: 5rem; */
+    position: relative;
+    top: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    width: fit-content;
+    border: 3px solid #ffffff;
+}
+.portrait img{
+    height: 100px;
+}
+.card-text{
+    padding: 1.5rem 0;
+    background-color: #ffffff;
+}
+.name{
+    font-size: 1.25rem;
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+.age{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    padding:0 0 0 .5rem;
+}
+.city{
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+    padding-bottom: 2rem;
+}
+hr{
+    border-top:1px solid hsl(0, 0%, 59%);
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    padding-bottom: .5rem;
+}
+.a{
+    font-size: 12px;
+    /* padding-bottom: 1rem; */
+}
+.b{
+    padding-bottom: .5rem;
+    padding-top: 0;
+}
+
+@media screen and (max-width:1000px){
+    .card-body{
+        width: 40%;
+    }
+    .stats{
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .card-body{
+        width: 50%;
+    }
+    .b{
+        padding-bottom: 0;
+    }
+    .card-text{
+        padding-bottom: 0;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .a{
+        font-size: .7rem;
+    }
+}
