@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    padding: 0 10%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-item{
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.one{
+    background-color: hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    background-position: top 90%;
+    grid-column: span 2;
+}
+.two{
+    background-color: hsl(217, 19%, 35%);
+}
+.three{
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+}
+.four{
+    padding-bottom: 0;
+    background-color: hsl(0, 0%, 100%);
+}
+.five{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+}
+
+.top{
+    display: flex;
+    justify-content: flex-start;
+    gap: .5rem;
+    padding-bottom: 1rem;
+}   
+
+.portrait{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 1rem;
+    color: hsla(210, 46%,95%,1);
+    padding-bottom: .2rem;
+}
+
+.position{
+    color: hsla(210, 46%,95%,.5);
+}
+
+.a{
+    font-size: 1rem;
+    color: hsla(210, 46%, 95%,.7);
+    padding-bottom: 1rem;
+}
+.alt{
+    color: hsl(219, 29%, 14%);
+    font-size: 1rem;
+}
+
+.b{
+    color: hsl(0, 0%, 81%);  
+}
+.alte{
+   color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width:800px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
