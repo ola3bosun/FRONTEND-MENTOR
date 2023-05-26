@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(270, 20%, 96%,.9);
+}
+.left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 550px;
+    width: 400px;
+    background-image: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-bottom-left-radius: 50%;
+    z-index: -1;
+    border-bottom-right-radius: 50%;
+}
+.right{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 550px;
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: hsla(206, 6%, 79%,.2);
+    z-index: -2;
+}
+.phone{
+    height: 450px;
+    width:  250px;
+    border: solid 8px hsla(0, 0%, 100%,.8);
+    border-radius: 32px;
+    background-color: hsl(270, 20%, 96%);
+    overflow: hidden;
+}
+.phone-text{
+    display: flex;
+    padding: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+.text h1{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+.text p{
+    color: hsl(270, 7%, 64%);
+}
+.text{
+    padding: 3rem;
+    width: 45%;
+
+}
+.top{
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    height: 70px
+}
+.notch{
+    width: 55%;
+    height: 20px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.chat-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+.fa{
+    color:hsl(0, 0%, 100%) ;
+    font-size: 1rem;
+}
+.portrait{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 2px hsl(0, 0%, 100%);
+}
+.staff h6{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+}
+.status{
+    color: hsla(206, 6%, 79%,.4);
+    font-size: .5rem;
+}
+.lef{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.dot{
+    height: 2px;
+    width: 2px;
+    margin-bottom: 2px;
+    border-top: solid 2px #fff;
+}
+.chat-environ{
+    padding: .3rem 0;
+}
+.walker-p{
+    background-color: hsla(206, 6%, 79%,.7);
+    color: hsl(276, 55%, 52%);
+    float: left;
+    font-size: 9px;
+    padding: .4rem;
+    border-radius: 8px;
+    margin: 0 0 .5rem .5rem;
+    text-align: left;
+    border-bottom-left-radius: 0;
+}
+.employer{
+    float: right;
+    margin-right: .5rem;
+}
+.dog-pics{
+    display: flex;
+    gap: 5px;
+    margin-bottom: .5rem;
+    justify-content: right;
+}
+.dog{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sender{
+    float: right;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(270, 7%, 64%);
+}
+.pricing{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    width: 60%;
+}
+.option{
+    display: flex;
+    align-items: center;
+}
+
+.duration{
+    font-size: 10px;
+    color: #fff; 
+    padding-left: .5rem;
+}
+.price p{
+    color:  hsl(206, 6%, 79%);
+    text-align: right;
+    font-size: 12px;
+}
+::placeholder{
+    font-size: 10px;
+}
+#text-field{
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5%;
+    padding: .3rem 10px ;
+}
+input{
+    border: 1px solid hsl(289, 100%, 72%);
+}
+.send{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    left: 0;
+    top: -25px;
+    float: right;
+    border: none;
+    margin-right: 1rem;
+    background:none;
+}
+.s{
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: hsl(271, 36%, 24%);
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px){
+    .phone-text{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .left{
+        left: -40%;
+    }
+    .right{
+        right: -50%;
+    }
+    .text{
+        text-align: center;
+    }
+}
