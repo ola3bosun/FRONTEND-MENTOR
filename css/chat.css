@@ -57,6 +57,7 @@ body{
 }
 .text p{
     color: hsl(270, 7%, 64%);
+    line-height: 22px;
 }
 .text{
     padding: 3rem;
