@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:  hsl(240, 75%, 98%);
+}
+nav{
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    padding: 1.5rem 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.pages{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+.left-first a{
+    text-decoration: underline 1px hsl(170, 45%, 43%);
+    color: hsl(170, 45%, 43%);
+    align-items: center;
+    text-underline-offset: 4px;
+}
+.left-first p img{
+    height: 20px;
+    margin-bottom: -4px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding: 2rem 4%;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 0;
+}
+p{
+    padding-bottom: 1rem;
+}
+.left-first input[type=email]{
+    padding: .5rem 1rem;
+    width: 55%;
+    border-radius: 3px;
+    border: .5px solid #000;
+}
+.left-first input[type=button]{
+    background-color: hsl(224, 93%, 58%);
+    padding: .5rem ;
+    width: 35%;
+    color: #fff;
+    border-radius: 5px;
+    border: solid 1px hsl(224, 93%, 58%);
+}
+.left-first{
+    width: 50%;
+}
+
+.second{
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4%;
+}
+
+.testimonial{
+    width: 65%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.portrait img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.who{
+    display: flex;
+    gap: 2%;
+}
+.f{
+    font-size: .8rem;
+}
+.third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(238, 22%, 44%);
+    padding: 2rem 4%;
+    color: #fff;
+}
+.right-third{
+    padding: 1rem 0;
+}
+.third input[type=email]{
+    width: 100%;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border: .5px solid #000;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.third input[type=button]{
+    width: 150px;
+    padding: .5rem;
+    background-color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+    border-radius: 4px;
+    color: #fff;
+}
+footer{
+    padding: 3.5rem 4%;
+    background-color:  hsl(243, 87%, 12%);
+}
+.footer-text{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15%;
+    /* color:  hsla(238, 22%, 44%,.9); */
+    color: #fff;
+}
+.link a{
+    text-decoration: none;
+    color:  hsla(238, 22%, 44%,.9);
+    color: #fff;
+}
+.socials, .tel{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: .5rem 0;
+    color: #fff;
+}
+.e{
+    height: 40px;
+    width: 40px;
+    border: solid 1px hsla(238, 22%, 44%,.9);
+    border-radius: 50%;
+    align-content: center;
+    padding: 2px;
+}
+.socials :nth-child(2) img{
+    height: 30px;
+}
+.e img{
+    height: 35px;
+}
+
+/* MOBILE RESPONSIVENESS */ 
+
+@media screen and (max-width:750px){
+    nav{
+        width: 100%;
+    }
+    .pages{
+        gap: 15px;
+    }
+    body{
+        width: 100%;
+    }
+    .first,.second{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+    }
+    .left-first{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .second h1, .third h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .second p{
+        text-align: left;
+    }
+    .anchor{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .left-first input[type=email],.left-first input[type=button]{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .testimonial{
+        width: 90%;
+        margin: 0 auto;
+    }
+    h6{
+        text-align: left;
+    }
+    .third{
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-third{
+        width: 100%;
+    }
+    .right-third input[type="email"], .right-third input[type="button"]{
+        width: 70%;
+    }
+    .footer-text{
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    .socials{
+        margin: 0 auto;
+    }
+}
