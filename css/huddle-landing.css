@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4%;
+}
+.trial{
+    padding:  .2rem 1rem;
+    border-radius: 30px;
+    border: 5px solid white;
+    background-color: white;
+}
+.trial:hover{
+    background-color: whitesmoke;
+    border: 5px solid hsl(193, 100%, 96%);
+}
+.top{
+    background-color:  hsl(193, 100%, 96%);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    align-items: center;
+}
+.left{
+    width: 35%;
+}
+.right{
+    width: 60%;
+}
+.left h1{
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+}
+.left p{
+    line-height: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+.left button{
+    background-color:  hsl(322, 100%, 66%);
+    border: 1px solid  hsl(322, 100%, 66%);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+}
+.middle{
+    padding: 7rem 4%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 5rem 3rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    box-shadow: 2px 2px 7px  hsl(208, 11%, 55%);
+}
+.row h2{
+    padding-bottom: 1.5rem;
+    color: hsl(192, 100%, 9%);
+}
+.row p{
+    line-height: 1.5rem;
+    color: hsl(208, 11%, 55%);
+}
+.l,.r{
+    width: 45%;
+}
+.floating-div{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 7px hsl(208, 11%, 55%);
+    border-radius: 16px;
+    position: relative;
+    top: 4rem;
+    background-color: white;
+}
+.floating-div h2{
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.floating-div button{
+    background-color:  hsla(322, 100%, 66%,.8);
+    border: 1px solid  hsla(322, 100%, 66%,.8);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+}
+.floating-div button:hover{
+    background-color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+footer{
+    padding: 5rem 4%;
+    background-color: hsl(192, 100%, 9%);
+}
+.logo{
+    padding: 3rem 0;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+    align-items: center;
+}
+.location{
+    display: flex;
+    gap: 20px;
+    color: #FFF;
+}
+.one{
+    width: 21%;
+    text-align: center;
+}
+.one p{
+    color:  hsl(208, 11%, 55%);
+}
+.location{
+    margin: 1rem 0;
+    text-align: left;
+}
+.footer-a{
+    padding: 1rem 0;
+}
+.footer-a a{
+    text-decoration: none;
+    color:  hsl(208, 11%, 55%);
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.unit{
+    padding: .5rem;
+    border: 1px solid hsl(208, 11%, 55%);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.c{
+    text-align: right;
+    color: hsla(208, 11%, 55%,.7);
+}
+.attribution{
+    padding-top: 3rem;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(208, 11%, 55%);
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        align-items: center;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .left, .right,.l,.r{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    .floating-div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .floating-div h2{
+        font-size: 1.2rem;
+    }
+    .footer-text{
+        flex-direction: column; 
+    }
+    .contact-info{
+        margin-bottom: 3rem;
+    }
+    .one{
+        width: 100%;
+        text-align: left;
+    }
+    .socials{
+        margin: 2rem auto;
+    }
+    .c{
+        text-align: center;
+    }
+}
