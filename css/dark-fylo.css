@@ -182,7 +182,8 @@ nav{
 }
 .sign-up{
     display: flex;
-    /* justify-content: space-between; */
+    margin: 0 auto;
+    justify-content: center;
     gap: 5%;
 }
 ::placeholder{
